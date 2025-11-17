@@ -21,7 +21,7 @@ form.addEventListener("submit", async (event) => {
   try {
     // fetch() call to existing Web API
     const response = await fetch(
-      `https://restcountries.com/v3.1/name/${encodeURIComponent(query)}`
+  `https://restcountries.com/v3.1/name/${encodeURIComponent(query)}?fullText=true`
     );
 
     if (!response.ok) {
@@ -85,3 +85,4 @@ form.addEventListener("submit", async (event) => {
       "<p>Something went wrong while fetching data. Please try again.</p>";
   }
 });
+
