@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Country Explorer</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <main class="container">
+    <h1>Country Explorer</h1>
+    <p class="subtitle">Search for any country and see quick travel info.</p>
+
+    <form id="countryForm">
+      <label for="countryInput">Country name</label>
+      <input
+        type="text"
+        id="countryInput"
+        name="country"
+        placeholder="e.g. Japan"
+      />
+      <button type="submit">Search</button>
+      <p id="errorMsg" class="error-message"></p>
+    </form>
+
+    <section id="results" class="results">
+      <!-- Country info will appear here -->
+    </section>
+  </main>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
